@@ -1,0 +1,41 @@
+using UnityEngine;
+using static UnityEditor.Searcher.SearcherWindow.Alignment;
+
+public class WaveMaker : MonoBehaviour
+{
+    public GameObject wavePrefab;
+    public int maxWaveAmount = 5;
+    public float waveRate;
+    float nextWave;
+
+    int waveIndex = 0;
+    bool generateWaves = false;
+
+    private void Update()
+    {
+        if (generateWaves)
+        {
+            if (Time.time > nextWave)
+            {
+                GameObject wave = Instantiate(wavePrefab, transform.position, transform.rotation);
+                waveIndex++;
+                nextWave = Time.time + waveRate;
+            }
+
+            if(waveIndex >= maxWaveAmount)
+            {
+                waveIndex = 0;
+                generateWaves = false;
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Water"))
+        {
+            waveIndex = 0;
+            generateWaves = true;
+        }
+    }
+}
