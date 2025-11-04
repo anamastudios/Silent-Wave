@@ -7,7 +7,7 @@ public class WaterWave : MonoBehaviour
     void Update()
     {
         float scaler = scaleSpeed * Time.deltaTime;
-        Debug.Log(scaler);
+        //Debug.Log(scaler);
 
         transform.localScale = new Vector2(transform.localScale.x + scaler, transform.localScale.y + scaler);
 

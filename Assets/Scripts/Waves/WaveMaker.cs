@@ -1,8 +1,8 @@
 using UnityEngine;
-using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class WaveMaker : MonoBehaviour
 {
+    public Player playerScript;
     public GameObject wavePrefab;
     public int maxWaveAmount = 5;
     public float waveRate;
@@ -13,6 +13,10 @@ public class WaveMaker : MonoBehaviour
 
     private void Update()
     {
+        if(playerScript.GetSwimmingStatus())
+            generateWaves = true;
+        else generateWaves = false;
+
         if (generateWaves)
         {
             if (Time.time > nextWave)
@@ -35,7 +39,6 @@ public class WaveMaker : MonoBehaviour
         if (collision.CompareTag("Water"))
         {
             waveIndex = 0;
-            generateWaves = true;
         }
     }
 }
