@@ -1,7 +1,9 @@
 using UnityEngine;
 
-public class SoundWave : MonoBehaviour
+public class SignalWave : MonoBehaviour
 {
+    //reminder: wave rate = 0.3f - perfect!
+
     float scaleSpeed = 6f;
 
     void Update()
