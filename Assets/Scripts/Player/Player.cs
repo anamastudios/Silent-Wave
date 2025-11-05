@@ -5,7 +5,8 @@ public class Player : MonoBehaviour
     // Public Variables
     public Rigidbody2D rigidPlayer;
     public Transform raypoint;
-    public LayerMask mask;
+    public WaveMaker WaterWaveMaker;
+    public WaveMaker SoundWaveMaker;
     public bool lockMovement = false;
     public bool stopPlayer = false;
     public float speed;
@@ -27,21 +28,32 @@ public class Player : MonoBehaviour
 
             if (movX > 0 || movY > 0)
                 isMoving = true;
+            else if (movX <= -1 || movY <= -1)
+            {
+                isMoving = true;
+            }
             else
                 isMoving = false;
 
+            SoundWaves();
+            WaterWaves();
             rigidPlayer.linearVelocity = new Vector2(movX, movY);
         }
+    }
 
-        Debug.Log("Is he swimming?: " + isSwimming);
-    }
-    public bool GetMovingStatus()
+    private void SoundWaves()
     {
-        return isMoving;
+        if (isMoving && !isSwimming)
+        {
+            SoundWaveMaker.GenWaves(true);
+        }
     }
-    public bool GetSwimmingStatus()
+    private void WaterWaves()
     {
-        return isSwimming;
+        if (isSwimming && isMoving)
+        {
+            WaterWaveMaker.GenWaves(true);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -56,8 +68,6 @@ public class Player : MonoBehaviour
         if (collision.CompareTag("Water"))
         {
             isSwimming = false;
-
-      
         }
     }
 }
