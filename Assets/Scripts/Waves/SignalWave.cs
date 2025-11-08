@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class SignalWave : MonoBehaviour
 {
-    //reminder: wave rate = 0.3f - perfect!
-
+    public GameObject doorToUnlock;
     float scaleSpeed = 6f;
 
     void Update()

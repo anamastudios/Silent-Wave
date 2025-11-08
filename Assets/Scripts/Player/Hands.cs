@@ -1,22 +1,25 @@
+using System.Collections.Generic;
+using System.Data;
 using UnityEngine;
 
 public class Hands : MonoBehaviour
 {
-    //Public values
+    //Public variables
     public Transform placeholder;
-    public GameObject[] itemsArray;
+    public GameObject[] itemList;
 
-    //Private values
-    int arrayItemLength;
-    int currentNum = 0;
-    int oldNum = 0;
+    //Private variables
     Vector2 mousePos;
     Vector2 convertedTo2;
     Camera cam;
+    GameObject item;
+    int scrollNum = 0;
+    int oldNum = 0;
 
     void Start()
     {
         cam = Camera.main.gameObject.GetComponent<Camera>();
+        SetItem(0);
     }
     void Update()
     {
@@ -27,28 +30,24 @@ public class Hands : MonoBehaviour
     }
     private void ItemSwitcher()
     {
-        arrayItemLength = itemsArray.Length;
+        if (Input.GetAxis("Mouse ScrollWheel") > 0f)
+            scrollNum++;
+        else if(Input.GetAxis("Mouse ScrollWheel") < 0f)
+            scrollNum--;
 
-        if (Input.GetAxis("Mouse ScrollWheel") > 0)
-            currentNum++;
-        else if(Input.GetAxis("Mouse ScrollWheel") < 0)
-            currentNum--;
+        if (scrollNum < 0 || scrollNum > itemList.Length - 1)
+            scrollNum = 0;
 
-        if (currentNum > arrayItemLength - 1 || currentNum < arrayItemLength - 1)
-            currentNum = 0;
-
-        if (currentNum > oldNum || currentNum < oldNum)
-            SetItem(currentNum);
-
-        Debug.Log(currentNum);
-
+        if(scrollNum != oldNum)
+            SetItem(scrollNum);
     }
     private void SetItem(int itemNum)
     {
-        DestroyImmediate(itemsArray[oldNum]);
         oldNum = itemNum;
+        Destroy(item);
+        item = Instantiate(itemList[itemNum], placeholder);
 
-        GameObject item = Instantiate(itemsArray[itemNum], placeholder);
+        Debug.Log("Deleted");
     }
     private void FixedUpdate()
     {
