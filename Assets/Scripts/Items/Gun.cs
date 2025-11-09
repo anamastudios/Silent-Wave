@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public GameObject firepoint;
+    public GameObject bulletPrefab;
 
-    // Update is called once per frame
+    int magazineSize = 7;
+    float fireRate;
+    float nextFire;
+
     void Update()
     {
         

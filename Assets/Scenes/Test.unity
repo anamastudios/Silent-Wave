@@ -8870,6 +8870,7 @@ GameObject:
   - component: {fileID: 1733801826}
   - component: {fileID: 1733801828}
   - component: {fileID: 1733801827}
+  - component: {fileID: 1733801830}
   - component: {fileID: 1733801829}
   m_Layer: 2
   m_Name: testchar_0
@@ -9059,6 +9060,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimSprite
   spriteList: []
+--- !u!114 &1733801830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733801823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7caca627f46359643a579c4c5097d182, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Stats
+  health: 50
 --- !u!1 &1872172152
 GameObject:
   m_ObjectHideFlags: 0
@@ -9107,7 +9121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

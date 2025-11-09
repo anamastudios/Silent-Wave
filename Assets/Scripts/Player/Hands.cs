@@ -10,6 +10,7 @@ public class Hands : MonoBehaviour
 
     //Private variables
     Vector2 mousePos;
+    SpriteRenderer objectSprite;
     Vector2 convertedTo2;
     Camera cam;
     GameObject item;
@@ -27,6 +28,15 @@ public class Hands : MonoBehaviour
 
         convertedTo2 = new Vector2(transform.position.x, transform.position.y);
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+
+        if (transform.rotation.z > 0)
+        {
+            objectSprite.flipY = true;
+        }
+        else
+        {
+            objectSprite.flipY = false;
+        }
     }
     private void ItemSwitcher()
     {
@@ -46,6 +56,7 @@ public class Hands : MonoBehaviour
         oldNum = itemNum;
         Destroy(item);
         item = Instantiate(itemList[itemNum], placeholder);
+        objectSprite = item.GetComponent<SpriteRenderer>();
 
         Debug.Log("Deleted");
     }
