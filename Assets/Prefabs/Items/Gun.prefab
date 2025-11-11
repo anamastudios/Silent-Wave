@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 3068523399347754165}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.782, y: 0.094, z: 0}
+  m_LocalPosition: {x: 0.782, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -74,9 +74,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -6694610744715711844, guid: d0e44996349428448be15e0a80db1f83, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 1145d19d2dadf04439d3596ee01c80d3, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -265,6 +265,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f37162b7070a91440a7801936d514989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  firepoint: {fileID: 3068523399347754165}
+  firepoint: {fileID: 3682751270201344650}
   bulletPrefab: {fileID: 764511828532541854, guid: ca840fb250982f64ca884ae2afac6e62, type: 3}
   shootAudio: {fileID: 6471361811611228438}

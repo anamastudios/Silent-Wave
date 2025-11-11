@@ -10,3 +10,6 @@ All sounds downloaded from https://freesound.org/
 8: Footsteps_3.wav by BarnarnarBunny -- https://freesound.org/s/419488/ -- License: Creative Commons 0
 9: Banshee Horror Voice: Phasing Out by AlesiaDavina -- https://freesound.org/s/830334/ -- License: Attribution 4.0
 10: Skull SH••.wav by ChristmasKrumble666 -- https://freesound.org/s/826072/ -- License: Creative Commons 0
+
+
+1: gun shot.WAV by Elmarp -- https://freesound.org/s/367000/ -- License: Attribution NonCommercial 3.0
