@@ -1,27 +1,47 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Gun : MonoBehaviour
 {
     public Transform firepoint;
     public GameObject bulletPrefab;
     public AudioSource shootAudio;
+    public GameObject UIElement;
+    public Text magazineText;
+    public Text reloadTime;
 
     Rigidbody2D bulletRB;
-    int magazineSize = 7;
-    float fireRate;
-    float nextFire;
+    static float timePass;
+    static int magazineMax = 7;
+    static int magazine = 0;
 
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
             Shoot();
+
+        if (magazine == 0)
+            Reload();
     }
     private void Shoot()
     {
-        GameObject bullet = Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
-        bulletRB = bullet.GetComponent<Rigidbody2D>();
-        bulletRB.AddForce(firepoint.right * 25f, ForceMode2D.Impulse);
+        if(magazine != 0)
+        {
+            GameObject bullet = Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
+            bulletRB = bullet.GetComponent<Rigidbody2D>();
+            bulletRB.AddForce(firepoint.right * 50f, ForceMode2D.Impulse);
+            magazine--;
+            shootAudio.Play();
+        }
+    }
+    private static void Reload()
+    {
+        timePass += Time.deltaTime;
 
-        shootAudio.Play();
+        if (timePass >= 5f)
+        {
+            magazine = magazineMax;
+            timePass = 0;
+        }
     }
 }

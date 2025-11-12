@@ -116,12 +116,12 @@ TextureImporter:
       name: interference_0
       rect:
         serializedVersion: 2
-        x: 11
+        x: 9
         y: 9
-        width: 11
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 19
+        height: 12
+      alignment: 9
+      pivot: {x: 0.6659606, y: 0.513592}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
