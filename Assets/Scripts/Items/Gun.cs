@@ -6,9 +6,6 @@ public class Gun : MonoBehaviour
     public Transform firepoint;
     public GameObject bulletPrefab;
     public AudioSource shootAudio;
-    public GameObject UIElement;
-    public Text magazineText;
-    public Text reloadTime;
 
     Rigidbody2D bulletRB;
     static float timePass;
@@ -38,10 +35,18 @@ public class Gun : MonoBehaviour
     {
         timePass += Time.deltaTime;
 
-        if (timePass >= 5f)
+        if (timePass >= 1.5f)
         {
             magazine = magazineMax;
             timePass = 0;
         }
+    }
+    public static int GetMagazine()
+    {
+        return magazine;
+    }
+    public static float GetTimePass()
+    {
+        return timePass;
     }
 }
