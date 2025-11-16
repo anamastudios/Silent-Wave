@@ -2,22 +2,25 @@ using UnityEngine;
 
 public class Device : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    Antenna interferedAntenna;
+    UI antennaUI;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public static bool gotSignal = false;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Signal"))
         {
-            Debug.Log("Got Signal");
+            interferedAntenna = collision.GetComponent<Antenna>();
+            gotSignal = true;
         }
+        else
+        {
+            gotSignal = false;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        gotSignal = false;
     }
 }

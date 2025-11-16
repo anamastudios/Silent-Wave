@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Water
   - Signal
+  - Interactable
   layers:
   - Default
   - TransparentFX

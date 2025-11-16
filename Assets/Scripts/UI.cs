@@ -3,8 +3,8 @@ using UnityEngine.UI;
 
 public class UI : MonoBehaviour
 {
-    public Text interactable;
     public Text magazinetext;
+    public GameObject OpenDoorUI;
 
     void Update()
     {
@@ -17,6 +17,13 @@ public class UI : MonoBehaviour
             magazinetext.text = Gun.GetTimePass().ToString();
         }
 
-        interactable.text = "Pistol";
+        if (Device.gotSignal)
+        {
+            OpenDoorUI.SetActive(true);
+        }
+        else
+        {
+            OpenDoorUI.SetActive(false);
+        }
     }
 }

@@ -8917,8 +8917,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7bef12c7ce09c644ab752433bc43e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  type: {fileID: 34896462}
   magazinetext: {fileID: 1768401564}
+  OpenDoorUI: {fileID: 0}
 --- !u!1 &1491787242
 GameObject:
   m_ObjectHideFlags: 0
@@ -9245,6 +9245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Stats
   health: 50
+  healthText: {fileID: 1858543928}
 --- !u!1 &1768401562
 GameObject:
   m_ObjectHideFlags: 0

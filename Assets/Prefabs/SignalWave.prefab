@@ -140,3 +140,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae2e1d542ef84014f88a3bd78dab0a63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SignalWave
+  doorToUnlock: {fileID: 0}

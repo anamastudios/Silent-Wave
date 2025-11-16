@@ -11,6 +11,6 @@ public class SignalWave : MonoBehaviour
 
         transform.localScale = new Vector2(transform.localScale.x + scaler, transform.localScale.y + scaler);
 
-        Destroy(gameObject, 0.5f);
+        Destroy(gameObject, 0.7f);
     }
 }
