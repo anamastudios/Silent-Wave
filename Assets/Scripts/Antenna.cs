@@ -13,6 +13,7 @@ public class Antenna : MonoBehaviour
     }
     public void openDoor()
     {
-
+        door.openDoor();
+        Debug.Log("OPEN IT!");
     }
 }
