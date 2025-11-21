@@ -13,7 +13,8 @@ public class Antenna : MonoBehaviour
     }
     public void openDoor()
     {
+        door = DoorObject.GetComponent<Door>();
         door.openDoor();
-        Debug.Log("OPEN IT!");
+        //Debug.Log("Sesame, open yourself!");
     }
 }

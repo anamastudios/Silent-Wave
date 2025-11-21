@@ -2,13 +2,15 @@ using UnityEngine;
 
 public class Device : MonoBehaviour
 {
-    Antenna interferedAntenna;
+    [SerializeField] Antenna interferedAntenna;
+    SignalWave signalWave;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Signal"))
         {
-            interferedAntenna = collision.GetComponent<Antenna>();
+            signalWave = collision.GetComponent<SignalWave>();
+            interferedAntenna = signalWave.GetAntenna();
             interferedAntenna.openDoor();
         }
     }

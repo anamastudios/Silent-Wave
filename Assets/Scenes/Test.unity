@@ -8670,6 +8670,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9104744069096979086, guid: 6fd8e01f03100904e9ed7243ade01345, type: 3}
+      propertyPath: nextLevel
+      value: Menu
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8730,9 +8734,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec311a077f9292409cb1b52fa140ac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveMaker
+  forSignal: {fileID: 0}
   wavePrefab: {fileID: 1222718679637886466, guid: 9b5e03ba4c53d1b4cb73f186a7b0f759, type: 3}
   maxWaveAmount: 5
   waveRate: 0.1
+  signal: 0
 --- !u!61 &973316544
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8779,6 +8785,11 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 20.355305, y: 4.300396}
   m_EdgeRadius: 0
+--- !u!1 &1181863706 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3808952703495068704, guid: 3004f12083ed3c040a10737bccba90c8, type: 3}
+  m_PrefabInstance: {fileID: 4683458850569095301}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1194254674
 GameObject:
   m_ObjectHideFlags: 0
@@ -8986,7 +8997,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   magazinetext: {fileID: 1768401564}
-  OpenDoorUI: {fileID: 0}
 --- !u!1 &1491787242
 GameObject:
   m_ObjectHideFlags: 0
@@ -9618,9 +9628,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec311a077f9292409cb1b52fa140ac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveMaker
+  forSignal: {fileID: 0}
   wavePrefab: {fileID: 1222718679637886466, guid: 8d5d5a49eba147d43ac96fe05c2cb986, type: 3}
   maxWaveAmount: 1
   waveRate: 0.2
+  signal: 0
 --- !u!1001 &4683458850569095301
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9629,6 +9641,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 712416593709857630, guid: 3004f12083ed3c040a10737bccba90c8, type: 3}
+      propertyPath: signal
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 712416593709857630, guid: 3004f12083ed3c040a10737bccba90c8, type: 3}
+      propertyPath: forSignal
+      value: 
+      objectReference: {fileID: 1181863706}
     - target: {fileID: 3294300171163599134, guid: 3004f12083ed3c040a10737bccba90c8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.54
