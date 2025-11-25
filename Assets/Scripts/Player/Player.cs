@@ -11,8 +11,11 @@ public class Player : MonoBehaviour
     public SpriteRenderer legs;
     public Sprite inWater;
     public Sprite normal;
+    public FlipSprites flipSprites;
     public bool lockMovement = false;
     public bool stopPlayer = false;
+    public bool deactivateWaterWaves = false;
+    public bool deactivateSoundWaves = false;
     public float speed;
 
     // Private Variables
@@ -31,20 +34,42 @@ public class Player : MonoBehaviour
                 rigidPlayer.linearVelocity = Vector2.zero;
 
             if (movX > 0 || movY > 0)
+            {
                 isMoving = true;
+                animsprite.StartAnim();
+            }
             else if (movX <= -1 || movY <= -1)
             {
+                animsprite.StartAnim();
                 isMoving = true;
             }
             else
+            {
+                animsprite.StopAnim();
                 isMoving = false;
+            }
 
-            SoundWaves();
-            WaterWaves();
+            if (movX < 0)
+                flipSprites.SpritesFlipX();
+            else if (movX > 0)
+                flipSprites.SpritesUnflipX();
+
+
+            if (isSwimming)
+            {
+                animsprite.StopAnim();
+                legs.sprite = inWater;
+            }
+
+            if(!deactivateSoundWaves)
+                SoundWaves();
+            
+            if(!deactivateWaterWaves)
+                WaterWaves();
+            
+            
             rigidPlayer.linearVelocity = new Vector2(movX, movY);
         }
-
-        //animsprite.StartAnim();
     }
 
     private void SoundWaves()
@@ -66,8 +91,6 @@ public class Player : MonoBehaviour
         if (collision.CompareTag("Water"))
         {
             isSwimming = true;
-            legs.sprite = inWater;
-            animsprite.StopAnim();
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -75,7 +98,6 @@ public class Player : MonoBehaviour
         if (collision.CompareTag("Water"))
         {
             isSwimming = false;
-            legs.sprite = normal;
         }
     }
 }

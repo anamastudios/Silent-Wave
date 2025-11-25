@@ -4,14 +4,14 @@ public class FlipSprites : MonoBehaviour
 {
     public SpriteRenderer[] spriteRenderer;
 
-    public void SpritesFlipY()
+    public void SpritesFlipX()
     {
         foreach(SpriteRenderer r in spriteRenderer)
-            r.flipY = true;
+            r.flipX = true;
     }
-    public void SpritesUnFlipY()
+    public void SpritesUnflipX()
     {
         foreach (SpriteRenderer r in spriteRenderer)
-            r.flipY = false;
+            r.flipX = false;
     }
 }

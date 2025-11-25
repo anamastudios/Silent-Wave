@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class AnimSprite : MonoBehaviour
 {
+    // It works as intended or maybe not........
     public Sprite baseSprite;
     public SpriteRenderer affectedRenderer;
     public Sprite[] spriteList;

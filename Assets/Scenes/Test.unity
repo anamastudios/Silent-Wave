@@ -8959,7 +8959,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.07516432, y: 0.58242226}
+  m_Offset: {x: 1.6481133, y: 0.58242226}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8969,7 +8969,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 20.355305, y: 4.300396}
+  m_Size: {x: 23.801857, y: 4.300396}
   m_EdgeRadius: 0
 --- !u!1 &1134116014
 GameObject:
@@ -8986,7 +8986,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1134116015
 Transform:
   m_ObjectHideFlags: 0
@@ -9969,6 +9969,7 @@ GameObject:
   - component: {fileID: 1733801827}
   - component: {fileID: 1733801830}
   - component: {fileID: 1733801829}
+  - component: {fileID: 1733801831}
   m_Layer: 2
   m_Name: Model
   m_TagString: Player
@@ -10043,8 +10044,11 @@ MonoBehaviour:
   legs: {fileID: 407627228}
   inWater: {fileID: -1057960357358682472, guid: 7756933f279f4bc428bff71cc8058b27, type: 3}
   normal: {fileID: 3835208398506107511, guid: e648ce93ac755474f85b3cf0ff13cc94, type: 3}
+  flipSprites: {fileID: 1733801831}
   lockMovement: 0
   stopPlayer: 0
+  deactivateWaterWaves: 0
+  deactivateSoundWaves: 0
   speed: 6
 --- !u!61 &1733801828
 BoxCollider2D:
@@ -10080,7 +10084,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 2.349928, y: -13.159594}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -10090,7 +10094,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 35, y: 122}
+  m_Size: {x: 30.926792, y: 86.907745}
   m_EdgeRadius: 0
 --- !u!114 &1733801829
 MonoBehaviour:
@@ -10124,6 +10128,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Stats
   health: 50
   healthText: {fileID: 1858543928}
+--- !u!114 &1733801831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733801823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 010b2f72d2f82034cafaf26d1e56dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlipSprites
+  spriteRenderer:
+  - {fileID: 1569119515}
+  - {fileID: 407627228}
 --- !u!1 &1768401562
 GameObject:
   m_ObjectHideFlags: 0
