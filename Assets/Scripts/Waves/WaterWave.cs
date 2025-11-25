@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class WaterWave : MonoBehaviour
 {
-    float scaleSpeed = 0.8f;
+    float scaleSpeed = 1.5f;
 
     void Update()
     {

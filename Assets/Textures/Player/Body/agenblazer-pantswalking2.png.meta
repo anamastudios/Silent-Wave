@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 120c92eda4cc872438dbbd862fb8fd1f
+guid: 1982d7d096642f841a6807fc871e5e93
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1984071242469346885
-    second: fishchest_0
+      213: 4261187494578376486
+    second: agenblazer-pantswalking2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fishchest_0
+      name: agenblazer-pantswalking2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -121,15 +121,15 @@ TextureImporter:
         width: 32
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bb1fb8f87b92774e0800000000000000
-      internalID: -1984071242469346885
+      spriteID: 62f4ea71377c22b30800000000000000
+      internalID: 4261187494578376486
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d94a5b608ed67f144807455fecc8c3ed
+    spriteID: 360a51c042ded434b927c9bbae9f5084
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fishchest_0: -1984071242469346885
+      agenblazer-pantswalking2_0: 4261187494578376486
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

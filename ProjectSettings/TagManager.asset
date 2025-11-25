@@ -8,6 +8,7 @@ TagManager:
   - Signal
   - Interactable
   - Door
+  - WaterWave
   layers:
   - Default
   - TransparentFX

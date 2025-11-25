@@ -7,6 +7,10 @@ public class Player : MonoBehaviour
     public Transform raypoint;
     public WaveMaker WaterWaveMaker;
     public WaveMaker SoundWaveMaker;
+    public AnimSprite animsprite;
+    public SpriteRenderer legs;
+    public Sprite inWater;
+    public Sprite normal;
     public bool lockMovement = false;
     public bool stopPlayer = false;
     public float speed;
@@ -39,6 +43,8 @@ public class Player : MonoBehaviour
             WaterWaves();
             rigidPlayer.linearVelocity = new Vector2(movX, movY);
         }
+
+        //animsprite.StartAnim();
     }
 
     private void SoundWaves()
@@ -60,6 +66,8 @@ public class Player : MonoBehaviour
         if (collision.CompareTag("Water"))
         {
             isSwimming = true;
+            legs.sprite = inWater;
+            animsprite.StopAnim();
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -67,6 +75,7 @@ public class Player : MonoBehaviour
         if (collision.CompareTag("Water"))
         {
             isSwimming = false;
+            legs.sprite = normal;
         }
     }
 }
