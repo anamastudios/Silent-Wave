@@ -9429,7 +9429,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -6694610744715711844, guid: d0e44996349428448be15e0a80db1f83, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 6edf717705bc4c549847c5051d76326c, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -10562,7 +10562,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 103
+  m_SortingOrder: 104
   m_Sprite: {fileID: -1984071242469346885, guid: 120c92eda4cc872438dbbd862fb8fd1f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10768,7 +10768,6 @@ GameObject:
   - component: {fileID: 1885040028}
   - component: {fileID: 1885040027}
   - component: {fileID: 1885040026}
-  - component: {fileID: 1885040024}
   m_Layer: 0
   m_Name: Mutant
   m_TagString: Untagged
@@ -10796,22 +10795,6 @@ Transform:
   - {fileID: 1396095136}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1885040024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885040022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de02c6c352fa17d43bf40de09a14e638, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AnimSprite
-  baseSprite: {fileID: 0}
-  affectedRenderer: {fileID: 0}
-  spriteList: []
-  spriteChangeRate: 0
 --- !u!61 &1885040025
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10846,7 +10829,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.003396988, y: 0.56237125}
+  m_Offset: {x: 0.07390213, y: -0.28369594}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -10856,7 +10839,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.7542381, y: 2.893982}
+  m_Size: {x: 1.1337891, y: 1.201848}
   m_EdgeRadius: 0
 --- !u!114 &1885040026
 MonoBehaviour:
@@ -10870,6 +10853,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0ee2836e7a22d246b01eb85bb09d922, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mutant
+  rbMutant: {fileID: 1885040027}
+  attackSpriteChange: {fileID: 1819973900}
+  normalSprite: {fileID: -1984071242469346885, guid: 120c92eda4cc872438dbbd862fb8fd1f, type: 3}
+  attackSprite: {fileID: 7294043820598054338, guid: 21b07e77ece162145b0da9ce39d1b31d, type: 3}
+  Model: {fileID: 1134116014}
+  collision: {fileID: 1885040025}
+  attackrange: {fileID: 1885040028}
+  attackTime: 0.3
+  attackDamage: 40
+  speed: 5
 --- !u!50 &1885040027
 Rigidbody2D:
   serializedVersion: 5
@@ -10893,7 +10886,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
@@ -10927,7 +10920,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
