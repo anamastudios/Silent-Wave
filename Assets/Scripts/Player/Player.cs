@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -12,6 +13,9 @@ public class Player : MonoBehaviour
     public Sprite inWater;
     public Sprite normal;
     public FlipSprites flipSprites;
+    public AudioSource footsteps;
+    public AudioClip footstepSurface;
+    public AudioClip footstepWater;
     public bool lockMovement = false;
     public bool stopPlayer = false;
     public bool deactivateWaterWaves = false;
@@ -57,17 +61,27 @@ public class Player : MonoBehaviour
 
             if (isSwimming)
             {
+                footsteps.clip = footstepWater;
                 animsprite.StopAnim();
                 legs.sprite = inWater;
             }
+            else
+            {
+                footsteps.clip = footstepSurface;
+            }
 
-            if(!deactivateSoundWaves)
+            if (!deactivateSoundWaves)
                 SoundWaves();
             
             if(!deactivateWaterWaves)
                 WaterWaves();
-            
-            
+
+            if (isMoving && !footsteps.isPlaying)
+            {
+                footsteps.pitch = UnityEngine.Random.Range(0.75f, 1f);
+                footsteps.Play();
+            }
+
             rigidPlayer.linearVelocity = new Vector2(movX, movY);
         }
     }

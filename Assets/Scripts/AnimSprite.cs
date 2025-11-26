@@ -15,7 +15,9 @@ public class AnimSprite : MonoBehaviour
     void Update()
     {
         if (started)
+        {
             RunAnimation();
+        }
     }
     public void StartAnim()
     {

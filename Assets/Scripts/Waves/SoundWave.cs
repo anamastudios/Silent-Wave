@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SoundWave : MonoBehaviour
 {
-    float scaleSpeed = 12f;
+    float scaleSpeed = 20f;
 
     void Update()
     {
@@ -10,6 +10,6 @@ public class SoundWave : MonoBehaviour
 
         transform.localScale = new Vector2(transform.localScale.x + scaler, transform.localScale.y + scaler);
 
-        Destroy(gameObject, 0.4f);
+        Destroy(gameObject, 0.5f);
     }
 }

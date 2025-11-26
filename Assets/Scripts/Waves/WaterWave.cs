@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class WaterWave : MonoBehaviour
 {
-    float scaleSpeed = 1.5f;
+    float scaleSpeed = 3f;
 
     void Update()
     {
@@ -11,6 +11,6 @@ public class WaterWave : MonoBehaviour
 
         transform.localScale = new Vector2(transform.localScale.x + scaler, transform.localScale.y + scaler);
 
-        Destroy(gameObject, 2);
+        Destroy(gameObject, 1.2f);
     }
 }
