@@ -9428,7 +9428,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -6694610744715711844, guid: d0e44996349428448be15e0a80db1f83, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 6edf717705bc4c549847c5051d76326c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -9557,7 +9557,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -6694610744715711844, guid: d0e44996349428448be15e0a80db1f83, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 1d7009a5701a7b6408a2eefde86fb768, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -9746,7 +9746,7 @@ GameObject:
   - component: {fileID: 1469505020}
   - component: {fileID: 1469505021}
   m_Layer: 0
-  m_Name: hitsound
+  m_Name: walking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9778,7 +9778,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -6694610744715711844, guid: d0e44996349428448be15e0a80db1f83, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 5b231c5b75233504f96d749386e24e20, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

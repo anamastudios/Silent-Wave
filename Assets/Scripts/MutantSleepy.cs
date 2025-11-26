@@ -14,7 +14,6 @@ public class MutantSleepy : MonoBehaviour
             if (!spawnAudio.isPlaying)
             {
                 spawnAudio.Play();
-                Debug.Log("Has been played");
             }
         }
     }

@@ -11,8 +11,10 @@ public class Door : MonoBehaviour
 
     public void openDoor()
     {
+        if (!isdooropen)
+            openDoorSound.Play();
+
         isdooropen = true;
-        openDoorSound.Play();
         spriteRenderer.sprite = doorOpenSprite;
     }
     private void OnTriggerEnter2D(Collider2D collision)
