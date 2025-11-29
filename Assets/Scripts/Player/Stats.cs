@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class Stats : MonoBehaviour
 {
-    public int health;
+    public static int health = 50;
     public Text healthText;
 
     int maxHealth;
@@ -15,5 +15,13 @@ public class Stats : MonoBehaviour
     private void Update()
     {
         healthText.text = "Health: " + health + "/" + maxHealth;
+    }
+    public static void Damage(int damage)
+    {
+        health -= damage;
+    }
+    public static int GetHealth()
+    {
+        return health;
     }
 }

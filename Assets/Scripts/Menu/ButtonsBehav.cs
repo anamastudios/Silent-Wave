@@ -11,13 +11,13 @@ public class ButtonsBehav : MonoBehaviour
     {
         SceneManager.LoadScene("Entrance");
     }
-    public void AudioLevelSound(float soundlevel)
+    public void AudioLevelSound(float sound)
     {
-        audioMix.SetFloat("sound", soundlevel);
+        audioMix.SetFloat("sound", sound);
     }
-    public void AudioLevelMusic(float musiclevel)
+    public void AudioLevelMusic(float music)
     {
-        audioMix.SetFloat("music", musiclevel);
+        audioMix.SetFloat("music", music);
     }
     public void CloseGame()
     {
