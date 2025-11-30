@@ -3,6 +3,7 @@ using UnityEngine;
 public class TrapFloor : MonoBehaviour
 {
     public WaveMaker makerWave;
+    public AudioSource creakSound;
 
     int creak = 0;
 
@@ -13,6 +14,7 @@ public class TrapFloor : MonoBehaviour
             if (creak == 0)
             {
                 makerWave.GenWaves(true);
+                creakSound.Play();
                 creak++;
             }
         }

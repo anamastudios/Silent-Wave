@@ -43,9 +43,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -6694610744715711844, guid: d0e44996349428448be15e0a80db1f83, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 705960f85510a564ead1ba7f875f7149, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.254
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -299,3 +299,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   makerWave: {fileID: 8505455044915224802}
+  creakSound: {fileID: 7310040181371360788}
