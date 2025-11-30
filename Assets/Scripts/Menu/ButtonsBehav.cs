@@ -1,4 +1,3 @@
-using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
@@ -22,5 +21,9 @@ public class ButtonsBehav : MonoBehaviour
     public void CloseGame()
     {
         Application.Quit();
+    }
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }
