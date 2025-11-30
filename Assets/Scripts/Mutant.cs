@@ -11,6 +11,7 @@ public class Mutant : MonoBehaviour
     public MutantAttackSphere attackRange;
     public AudioSource attackSound;
     public WaveMaker makerWave;
+    public GameObject attackScreen;
     public float attackTime;
     public int attackDamage;
     public float speed;
@@ -60,10 +61,12 @@ public class Mutant : MonoBehaviour
         if (attackSound.isPlaying)
         {
             attackSpriteChange.sprite = attackSprite;
+            attackScreen.SetActive(true);
         }
         else
         {
             attackSpriteChange.sprite = normalSprite;
+            attackScreen.SetActive(false);
         }
     }
 }
