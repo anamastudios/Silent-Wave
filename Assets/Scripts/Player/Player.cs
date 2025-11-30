@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
     public bool deactivateWaterWaves = false;
     public bool deactivateSoundWaves = false;
     public float speed;
+    public bool setPermanentSwim = false;
 
     // Private Variables
     private float movX, movY;
@@ -80,6 +81,11 @@ public class Player : MonoBehaviour
             {
                 footsteps.pitch = UnityEngine.Random.Range(0.75f, 1f);
                 footsteps.Play();
+            }
+
+            if (setPermanentSwim)
+            {
+                isSwimming = true; 
             }
 
             rigidPlayer.linearVelocity = new Vector2(movX, movY);

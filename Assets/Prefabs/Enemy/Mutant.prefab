@@ -346,7 +346,7 @@ MonoBehaviour:
   attackScreen: {fileID: 0}
   attackTime: 0.9
   attackDamage: 30
-  speed: 5
+  speed: 7
 --- !u!1 &2749376146465612269
 GameObject:
   m_ObjectHideFlags: 0
