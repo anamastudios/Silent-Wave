@@ -6,11 +6,14 @@ public class Stats : MonoBehaviour
     public static int health = 50;
     public Text healthText;
 
-    int maxHealth;
+    int maxHealth = 50;
 
     private void Start()
     {
-        maxHealth = health;
+        if (health < maxHealth)
+        {
+            health = 50;
+        }
     }
     private void Update()
     {

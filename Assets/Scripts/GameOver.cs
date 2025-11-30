@@ -1,16 +1,24 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public GameObject gameOver;
+    public string sceneName;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Stats.GetHealth() <= 0)
+        {
+            gameOver.SetActive(true);
+            Time.timeScale = 0;
+            Stats.health = 50;
+        }
+    }
+    public void ReloadScene()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(sceneName);
     }
 }

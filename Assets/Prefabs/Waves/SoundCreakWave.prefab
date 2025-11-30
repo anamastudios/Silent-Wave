@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3389280810511647431}
   - component: {fileID: 973287752330439337}
   - component: {fileID: 365223334434940185}
-  - component: {fileID: -8842805945509792311}
+  - component: {fileID: 1582359575602846147}
   m_Layer: 0
-  m_Name: SoundWave
+  m_Name: SoundCreakWave
   m_TagString: Sound
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,7 +128,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!114 &-8842805945509792311
+--- !u!114 &1582359575602846147
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,6 +137,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1222718679637886466}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23292ab23f4effa4e85069ef59165614, type: 3}
+  m_Script: {fileID: 11500000, guid: ca186727550d9ae478b190e43f6c8890, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SoundWave
+  m_EditorClassIdentifier: Assembly-CSharp::SoundCreakWave

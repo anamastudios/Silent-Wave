@@ -9,6 +9,10 @@ TagManager:
   - Interactable
   - Door
   - WaterWave
+  - PlayerLegs
+  - Stoppoint
+  - Hackscoper
+  - Sound
   layers:
   - Default
   - TransparentFX

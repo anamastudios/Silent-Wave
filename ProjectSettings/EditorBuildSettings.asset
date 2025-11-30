@@ -15,11 +15,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Canal.unity
     guid: dcf98caa940ad5244ab4f2fc33719437
   - enabled: 1
+    path: Assets/Scenes/Levels/Hotel.unity
+    guid: 8d78be4995d68a04086665879a1a537c
+  - enabled: 1
     path: Assets/Scenes/Test.unity
     guid: 96404f565bc59874ca7e3d473cf162ca
-  - enabled: 0
-    path: Assets/Scenes/Levels/Hotel.unity
-    guid: 04c54ef743e86284481d6cf0f0f811a0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
