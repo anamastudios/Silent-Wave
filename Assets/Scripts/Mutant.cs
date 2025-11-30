@@ -33,7 +33,7 @@ public class Mutant : MonoBehaviour
         if (allowMovement)
         {
             Vector3 playerPos = (transPlayer.position - rbMutant.transform.position).normalized;
-            collision.enabled = true;
+            collision.enabled = false;
             rbMutant.MovePosition(rbMutant.transform.position + playerPos * speed * Time.fixedDeltaTime);
 
             makerWave.GenWaves(true);
