@@ -11,7 +11,7 @@ If you have followed the target to his room, you take the shot and the game is d
 
 # Downloads
 
-    Or download it from Itch.io: https://anamastudios.itch.io/silent-wave
-    Just download it from GitHub
+- Or download it from Itch.io: https://anamastudios.itch.io/silent-wave
+- Just download it from GitHub
 
 Unity: 6000.2.7f2
