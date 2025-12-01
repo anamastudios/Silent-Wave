@@ -6053,6 +6053,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7875210499083595170, guid: d257935df5b00e247ae96a36dd7a01cc, type: 3}
   m_PrefabInstance: {fileID: 729073401}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &736418004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 736418005}
+  m_Layer: 2
+  m_Name: Firepoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &736418005
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736418004}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0498427, y: 0.6531448, z: 0}
+  m_LocalScale: {x: 0.034376044, y: 0.034376044, z: 0.034376044}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 992211297}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &754241245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6916,6 +6947,10 @@ MonoBehaviour:
   gunSpriteTorso: {fileID: 55689430517630605, guid: 0e4c7bac5bae14a449080a754c6a3f65, type: 3}
   spriteFlip: {fileID: 873556902}
   footsteps: {fileID: 1971259571}
+  firePoint: {fileID: 736418005}
+  playerModel: {fileID: 1733801825}
+  bulletPrefab: {fileID: 764511828532541854, guid: ca840fb250982f64ca884ae2afac6e62, type: 3}
+  fireRate: 0.2
 --- !u!1001 &879184143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68515,7 +68550,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 29.090027, y: 29.090027, z: 29.090027}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 736418005}
   m_Father: {fileID: 873556900}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &992211298
@@ -73680,6 +73716,7 @@ GameObject:
   - component: {fileID: 1733801829}
   - component: {fileID: 1733801831}
   - component: {fileID: 1733801832}
+  - component: {fileID: 1733801833}
   m_Layer: 2
   m_Name: Model
   m_TagString: Player
@@ -73871,6 +73908,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameOver
   gameOver: {fileID: 1911369004}
   sceneName: Hotel
+--- !u!114 &1733801833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733801823}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31325f68109a8644cae2e7c59fbfe1ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
 --- !u!1001 &1734758549
 PrefabInstance:
   m_ObjectHideFlags: 0

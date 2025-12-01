@@ -13,6 +13,7 @@ TagManager:
   - Stoppoint
   - Hackscoper
   - Sound
+  - Bullet
   layers:
   - Default
   - TransparentFX
