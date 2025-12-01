@@ -51,7 +51,7 @@ public class Hackscoper : MonoBehaviour
         distance = target - convertedTo2;
         
 
-        if (distance.magnitude > 15)
+        if (distance.magnitude > 15 && !gainedBoost)
             Stats.Damage(100);
     }
     void AttackPlayer()
