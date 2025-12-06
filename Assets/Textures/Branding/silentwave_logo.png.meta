@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fe1aecf776b2af84a9571be50c109759
+guid: 12002000792f179479de0d59e96f9fad
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6172007939101339123
-    second: icon_scaled_8x_pngcrushed_0
+      213: -2180941666863230933
+    second: logounscaled_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,17 +109,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icon_scaled_8x_pngcrushed_0
+      name: logounscaled_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 23
-        width: 218
-        height: 210
+        x: 0
+        y: 0
+        width: 128
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d0259f6ea7f985aa0800000000000000
-      internalID: -6172007939101339123
+      spriteID: b20d4ceeb1dbbb1e0800000000000000
+      internalID: -2180941666863230933
       vertices: []
       indices: 
       edges: []
@@ -148,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      icon_scaled_8x_pngcrushed_0: -6172007939101339123
+      logounscaled_0: -2180941666863230933
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,49 +1,10 @@
 fileFormatVersion: 2
-guid: ebabebb33ee9e764a9030f6bd504b638
+guid: 62d6318b1d1cb3f4991dd07019d76cea
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 673291008100969390
-    second: logo_5x_0
-  - first:
-      213: 8596487155495410631
-    second: logo_5x_1
-  - first:
-      213: 8889604949349445617
-    second: logo_5x_2
-  - first:
-      213: -4372178652874409885
-    second: logo_5x_3
-  - first:
-      213: 6849234150894816875
-    second: logo_5x_4
-  - first:
-      213: 1136592892503617861
-    second: logo_5x_5
-  - first:
-      213: -8691309997203085037
-    second: logo_5x_6
-  - first:
-      213: 2865471507965670596
-    second: logo_5x_7
-  - first:
-      213: 4361936580525515854
-    second: logo_5x_8
-  - first:
-      213: 6356713998955884947
-    second: logo_5x_9
-  - first:
-      213: 75707108440822112
-    second: logo_5x_10
-  - first:
-      213: -6125031406297345434
-    second: logo_5x_11
-  - first:
-      213: -4331159779484482313
-    second: logo_5x_12
-  - first:
-      213: -1722751442551016652
-    second: logo_5x_13
+      213: -2252379806506117126
+    second: ui_background_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -79,9 +40,9 @@ TextureImporter:
     filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -90,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -148,17 +109,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: logo_5x_0
+      name: ui_background_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1280
-        height: 120
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eaba258ca92085900800000000000000
-      internalID: 673291008100969390
+      spriteID: af790f5ef70fdb0e0800000000000000
+      internalID: -2252379806506117126
       vertices: []
       indices: 
       edges: []
@@ -177,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a8e59b8a1ef102a4eae94c47d5d8a2e6
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -187,20 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      logo_5x_0: 673291008100969390
-      logo_5x_1: 8596487155495410631
-      logo_5x_10: 75707108440822112
-      logo_5x_11: -6125031406297345434
-      logo_5x_12: -4331159779484482313
-      logo_5x_13: -1722751442551016652
-      logo_5x_2: 8889604949349445617
-      logo_5x_3: -4372178652874409885
-      logo_5x_4: 6849234150894816875
-      logo_5x_5: 1136592892503617861
-      logo_5x_6: -8691309997203085037
-      logo_5x_7: 2865471507965670596
-      logo_5x_8: 4361936580525515854
-      logo_5x_9: 6356713998955884947
+      ui_background_0: -2252379806506117126
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

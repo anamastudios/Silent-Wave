@@ -1,10 +1,55 @@
 fileFormatVersion: 2
-guid: c8577b0bf78aa2a49b7e840c8c7129a3
+guid: 45b537c654162514b90088e630084028
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4320295261928297051
-    second: logo_0
+      213: -8453419850080018565
+    second: pxa_logo_scaled_0
+  - first:
+      213: -6057778356071643979
+    second: pxa_logo_scaled_1
+  - first:
+      213: -8220286791024651986
+    second: pxa_logo_scaled_2
+  - first:
+      213: 578812638618206432
+    second: pxa_logo_scaled_3
+  - first:
+      213: 5300127800165659301
+    second: pxa_logo_scaled_4
+  - first:
+      213: 7425895030374481232
+    second: pxa_logo_scaled_5
+  - first:
+      213: -4716712653567997780
+    second: pxa_logo_scaled_6
+  - first:
+      213: 5228359102730060079
+    second: pxa_logo_scaled_7
+  - first:
+      213: 8729733189364379261
+    second: pxa_logo_scaled_8
+  - first:
+      213: 2752315041829462269
+    second: pxa_logo_scaled_9
+  - first:
+      213: -7843293547454084631
+    second: pxa_logo_scaled_10
+  - first:
+      213: 5917638951945009972
+    second: pxa_logo_scaled_11
+  - first:
+      213: -7461212740514566740
+    second: pxa_logo_scaled_12
+  - first:
+      213: -1679600244989609178
+    second: pxa_logo_scaled_13
+  - first:
+      213: -1946875232923966773
+    second: pxa_logo_scaled_14
+  - first:
+      213: 4035983163861391879
+    second: pxa_logo_scaled_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,27 +154,40 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: logo_0
+      name: afg_logo_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 9
-        width: 557
-        height: 482
+        x: 0
+        y: 0
+        width: 1128
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5ade5f3695a3b04c0800000000000000
-      internalID: -4320295261928297051
+      spriteID: 4eafea42201426548b76cc90e9b22f25
+      internalID: 297304176
       vertices: []
       indices: 
       edges: []
@@ -138,7 +196,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b91afb3820ee9b74897af267553621d0
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +206,23 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      logo_0: -4320295261928297051
+      afg_logo_0: 297304176
+      pxa_logo_scaled_0: -8453419850080018565
+      pxa_logo_scaled_1: -6057778356071643979
+      pxa_logo_scaled_10: -7843293547454084631
+      pxa_logo_scaled_11: 5917638951945009972
+      pxa_logo_scaled_12: -7461212740514566740
+      pxa_logo_scaled_13: -1679600244989609178
+      pxa_logo_scaled_14: -1946875232923966773
+      pxa_logo_scaled_15: 4035983163861391879
+      pxa_logo_scaled_2: -8220286791024651986
+      pxa_logo_scaled_3: 578812638618206432
+      pxa_logo_scaled_4: 5300127800165659301
+      pxa_logo_scaled_5: 7425895030374481232
+      pxa_logo_scaled_6: -4716712653567997780
+      pxa_logo_scaled_7: 5228359102730060079
+      pxa_logo_scaled_8: 8729733189364379261
+      pxa_logo_scaled_9: 2752315041829462269
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
