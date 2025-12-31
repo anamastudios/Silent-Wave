@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
@@ -6,6 +7,10 @@ public class ButtonsBehav : MonoBehaviour
 {
     public AudioMixer audioMix;
 
+    public void SceneString(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
     public void StartGame()
     {
         SceneManager.LoadScene("Entrance");
