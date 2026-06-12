@@ -12,13 +12,13 @@ public class GameOver : MonoBehaviour
         if (Stats.GetHealth() <= 0)
         {
             gameOver.SetActive(true);
-            Time.timeScale = 0;
+            Stats.isPlayerDead = true;
             Stats.health = 50;
         }
     }
     public void ReloadScene()
     {
-        Time.timeScale = 1;
         SceneManager.LoadScene(sceneName);
+        Stats.isPlayerDead = false;
     }
 }

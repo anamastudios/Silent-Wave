@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: ceed9f9c7275c30419ee7fe52e2750b1
+guid: 9003b3028a4f58e41afce8705cbd8cc4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1044770363015881816
-    second: icon_scaled_6x_pngcrushed_0
+      213: -9102994521471463164
+    second: ashteransplash_0
+  - first:
+      213: -2791962867554885231
+    second: ashteransplash_1
+  - first:
+      213: 334323607054156223
+    second: ashteransplash_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -114,7 +120,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,13 +132,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icon_scaled_6x_pngcrushed_0
+      name: ashteransplash_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 17
-        width: 164
-        height: 158
+        x: 0
+        y: 0
+        width: 1059
+        height: 373
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +147,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 854ea671c15cf7e00800000000000000
-      internalID: 1044770363015881816
+      spriteID: 401dd5366baaba180800000000000000
+      internalID: -9102994521471463164
       vertices: []
       indices: 
       edges: []
@@ -151,7 +157,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c34dab3897967f940bb29cf2087f7266
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +167,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      icon_scaled_6x_pngcrushed_0: 1044770363015881816
+      ashteransplash_0: -9102994521471463164
+      ashteransplash_1: -2791962867554885231
+      ashteransplash_2: 334323607054156223
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

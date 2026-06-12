@@ -5,6 +5,7 @@ public class Stats : MonoBehaviour
 {
     public static int health = 50;
     public Text healthText;
+    public static bool isPlayerDead = false;
 
     int maxHealth = 50;
 

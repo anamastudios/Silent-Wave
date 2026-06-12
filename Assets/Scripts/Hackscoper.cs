@@ -14,6 +14,7 @@ public class Hackscoper : MonoBehaviour
     public Transform playerModel;
     public GameObject bulletPrefab;
     public float fireRate;
+    public AudioSource pewpewsound;
 
     Vector2 convertedTo2;
     Vector2 target;
@@ -64,9 +65,10 @@ public class Hackscoper : MonoBehaviour
         float angle = Mathf.Atan2(lookTo.x, lookTo.y) * Mathf.Rad2Deg;
         firePoint.rotation = Quaternion.Euler(0, 0, -angle);
 
-        if (Time.time > nextFire)
+        if (Time.time > nextFire && Stats.isPlayerDead != true)
         {
             Shoot();
+            pewpewsound.Play();
             nextFire = Time.time + fireRate;
         }
     }

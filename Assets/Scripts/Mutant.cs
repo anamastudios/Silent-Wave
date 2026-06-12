@@ -51,7 +51,10 @@ public class Mutant : MonoBehaviour
     }
     private void StartAttack()
     {
-        if (Time.time > nextAttack)
+        if (Stats.health < 0)
+            Stats.isPlayerDead = true;
+
+        if (Time.time > nextAttack && Stats.isPlayerDead != true)
         {
             Stats.Damage(attackDamage);
             nextAttack = Time.time + attackTime;
